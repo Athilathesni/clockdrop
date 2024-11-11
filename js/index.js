@@ -1,6 +1,6 @@
-const createOptions = (dropdown, values) => values.map(v => {
+const createOptions = (dropdown, values) => values.map(A => {
     const option = document.createElement("option");
-    option.value = v; option.text = v;
+    option.value = A; option.text = A;
     dropdown.appendChild(option);
 });
 window.onload = () => {
@@ -22,7 +22,7 @@ window.onload = () => {
             month: document.getElementById("month-dropdown").value || "null",
             date: document.getElementById("date-dropdown").value || "null"
         };
-        document.getElementById("selected-info").textContent = `Selected: hour:${selected.hour},Minute:${selected.minute},Day: ${selected.day},Month: ${selected.month},Date: ${selected.date}`;
+        document.getElementById("selected-info").textContent = `SELECTED: hour:${selected.hour},Minute:${selected.minute},Day: ${selected.day},Month: ${selected.month},Date: ${selected.date}`;
     };
     document.querySelectorAll('select').forEach(sel => sel.addEventListener("change", updateInfo));
 };

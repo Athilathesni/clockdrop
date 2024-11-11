@@ -21,8 +21,14 @@ label{
     margin-left: 10px;
 }
 .info{
-    margin-top: 20px;
-    margin-left: 100px;
+    margin-top: 40px;
+    margin-left: 150px;
     gap: 20px;
     color: rgb(52, 5, 179);
+    font-size: 20px;
+}
+h1{
+    color: black;
+    text-decoration: underline;
+    text-shadow:2px 2px rgb(212, 208, 208);
 }
