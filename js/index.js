@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded",()=>{
 const createOptions = (dropdown, values) => values.map(A => {
     const option = document.createElement("option");
     option.value = A; option.text = A;
@@ -26,3 +27,39 @@ window.onload = () => {
     };
     document.querySelectorAll('select').forEach(sel => sel.addEventListener("change", updateInfo));
 };
+})
+
+
+// document.addEventListener("DOMContentLoaded",()=>{
+//     const forms=document.getElementById("form");
+//     const saved=document.getElementById("saved-data")
+
+//     const savedData=JSON.parse(localStorage.getItem("datetime"))||null;
+//     if(savedData){
+//         displaysavedData(savedData)
+//     }
+//     forms.addEventListener("save",(e)=>{
+//         e.preventDefault()
+
+//         const inputs={
+//             year:forms.year.value||"*",
+//             month:forms.month.value||"*",
+//             day:forms.day.value||"*",
+//             date:forms.date.value||"*",
+//             hour:forms.hour.value||"*",
+//             minute:forms.minute.value||"*"
+//         }
+//         localStorage.setItem("datatime",JSON.stringify(inputs))
+//         displaysavedData(inputs)
+//     })
+//     function displaysavedData(data){
+//         saved.innerHTML=`
+//         year:${data.year}<br>
+//          month:${data.month}<br>
+//           day:${data.day}<br>
+//            date:${data.date}<br>
+//            hour:${data.hour}<br>
+//             minute:${data.minute}<br>
+//         `
+//     }
+// })

@@ -1,6 +1,8 @@
 .main{
+    display: grid;
     width: 100%;
     height: 100%;
+    gap: 10px;
     margin-left: 100px;
     margin-top: 100px;
 }
@@ -17,18 +19,18 @@ select{
 }
 label{
     font-weight: bold;
-    color: brown;
+    color: rgb(100, 16, 16);
     margin-left: 10px;
 }
 .info{
     margin-top: 40px;
     margin-left: 150px;
     gap: 20px;
-    color: rgb(52, 5, 179);
+    color: rgb(64, 19, 187);
     font-size: 20px;
 }
 h1{
-    color: black;
+    color: rgb(12, 14, 126);
     text-decoration: underline;
     text-shadow:2px 2px rgb(212, 208, 208);
 }
